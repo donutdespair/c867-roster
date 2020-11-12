@@ -25,7 +25,6 @@
 /* Begin PBXFileReference section */
 		FE0894F4255CA0E600BBF58D /* c867-student-roster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c867-student-roster"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0894F7255CA0E600BBF58D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FE0894FF255CA10700BBF58D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				FE0894F7255CA0E600BBF58D /* main.cpp */,
-				FE0894FF255CA10700BBF58D /* README.md */,
 			);
 			path = "c867-student-roster";
 			sourceTree = "<group>";
