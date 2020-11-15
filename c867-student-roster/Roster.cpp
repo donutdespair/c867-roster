@@ -71,18 +71,6 @@ void Roster::printAll()
     for (int i = 0; i <= Roster::lastIndex; i++) Roster::classRosterArray[i]->print();
 }
 
-
-//display students matching degree type
-void Roster::printByDegreeType(DegreeType dt)
-{
-    Student::printHeader();
-    for (int i = 0; i <= Roster::lastIndex; i++) {
-        if (Roster::classRosterArray[i]->getDegreeType() == dt) classRosterArray[i]->print();
-    }
-    cout << std::endl;
-}
-
-
 void Roster::printInvalidEmails()
 {
     bool any = false;
@@ -103,6 +91,7 @@ void Roster::printInvalidEmails()
     //prints if no invalid IDs
 }
 
+
 void Roster::printAverageDays(string studentID)
 {
     for (int i = 0; i <= Roster::lastIndex; i++)
@@ -118,6 +107,15 @@ void Roster::printAverageDays(string studentID)
     }
 }
 
+//display students matching degree type
+void Roster::printByDegreeType(DegreeType dt)
+{
+    Student::printHeader();
+    for (int i = 0; i <= Roster::lastIndex; i++) {
+        if (Roster::classRosterArray[i]->getDegreeType() == dt) classRosterArray[i]->print();
+    }
+    cout << std::endl;
+}
 
 bool Roster::removeStudentByID(string studentID)
 //takes student id for student to be removed as param

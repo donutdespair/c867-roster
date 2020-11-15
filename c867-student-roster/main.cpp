@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Name: Carson Harder-Hyde\n" << "ID: #\n" << "Course: C867 Scripting and Programming - Applications\n" << "Programming Language: C++" << std::endl;
+    cout << "Course: C867 Scripting and Programming - Applications\n" << "Programming Language: C++\n" << "ID: #\n" << "Name: Carson Harder-Hyde" << std::endl << std::endl;
     
    //long string to parse
     const string studentData[] =
