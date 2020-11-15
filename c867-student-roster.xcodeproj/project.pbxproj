@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FE0894F8255CA0E600BBF58D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE0894F7255CA0E600BBF58D /* main.cpp */; };
+		FE089505255DE85300BBF58D /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE089503255DE85300BBF58D /* Student.cpp */; };
+		FE0895092560721800BBF58D /* Roster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE0895072560721700BBF58D /* Roster.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,10 @@
 		FE0894F4255CA0E600BBF58D /* c867-student-roster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c867-student-roster"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0894F7255CA0E600BBF58D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FE089502255DE62900BBF58D /* Degree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Degree.h; sourceTree = "<group>"; };
+		FE089503255DE85300BBF58D /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		FE089504255DE85300BBF58D /* Student.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Student.hpp; sourceTree = "<group>"; };
+		FE0895072560721700BBF58D /* Roster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Roster.cpp; sourceTree = "<group>"; };
+		FE0895082560721700BBF58D /* Roster.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Roster.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 			children = (
 				FE0894F7255CA0E600BBF58D /* main.cpp */,
 				FE089502255DE62900BBF58D /* Degree.h */,
+				FE089503255DE85300BBF58D /* Student.cpp */,
+				FE0895072560721700BBF58D /* Roster.cpp */,
+				FE0895082560721700BBF58D /* Roster.hpp */,
+				FE089504255DE85300BBF58D /* Student.hpp */,
 			);
 			path = "c867-student-roster";
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0894F8255CA0E600BBF58D /* main.cpp in Sources */,
+				FE089505255DE85300BBF58D /* Student.cpp in Sources */,
+				FE0895092560721800BBF58D /* Roster.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
