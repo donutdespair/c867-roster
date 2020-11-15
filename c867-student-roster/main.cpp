@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Course: C867 Scripting and Programming - Applications\n" << "Programming Language: C++\n" << "ID: #\n" << "Name: Carson Harder-Hyde" << std::endl << std::endl;
+    cout << "Course: C867 Scripting and Programming - Applications\n" << "Programming Language: C++\n" << "ID: 000512076\n" << "Name: Carson Harder-Hyde" << std::endl << std::endl;
     
    //long string to parse
     const string studentData[] =
@@ -22,25 +22,39 @@ int main()
     Roster roster;//creates repo using default parameterless constructor; everything set to 0
         
     for (int i = 0; i < studentDataTable; i++) roster.parse(studentData[i]);
-    cout << "Displaying all students...:" << std::endl;
+    cout << "Displaying all students:" << std::endl;
     roster.printAll();
     cout << std::endl;
+    //display all students
     
-    for (int i = 0; i < 3; i++)
-    {
-    cout << "Displaying by degree program: " << degreeTypeStrings[i] << std::endl;
-        roster.printByDegreeType((DegreeType)i);//force degree type into integer; has underlying integer value
-    }
+    cout << "Displaying all software students:" << std::endl;
+    roster.printByDegreeType(SOFTWARE);
+    cout << std::endl;
+    //display all students in the software degree program
     
-    cout << "Displaying students with invalid email addess: " << std::endl;
+    cout << "Displaying invalid email addess: " << std::endl;
     roster.printInvalidEmails();
     cout << std::endl;
+    //display all students with an incorrectly formatted email address
     
-    cout << "Displaying average days per class" << std::endl;
+    cout << "Displaying average days per class:" << std::endl;
     for (int i = 0; i < studentDataTable; i++)
     {
     roster.printAverageDays(roster.classRosterArray[i]->getID());
     }
+    cout << std::endl;
+    //display the average number of days each student spends in 3 classes
+    
+    cout << "Remove student A3." << std::endl;
+    roster.removeStudentByID("A3");
+    cout << std::endl;
+    //remove student A3 and print all remaining students
+    
+    cout << "Remove student A3." << std::endl;
+    roster.removeStudentByID("A3");
+    cout << std::endl << std::endl;
+    //throw an error when A3 not found
+
 }
 
 
